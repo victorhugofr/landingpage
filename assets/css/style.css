@@ -1,0 +1,148 @@
+:root {
+    --primary-color: #0057b7; /* azul forte */
+    --secondary-color: #ffd700; /* amarelo para contraste */
+    --bg-color: #f4f7fc;
+    --text-color: #333;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    background: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    font-weight: 700;
+    margin: 0 0 1rem;
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    padding: 2rem 0;
+}
+
+.hero {
+    background: url('https://source.unsplash.com/1600x900/?finance') center/cover fixed;
+    color: white;
+    text-align: center;
+    padding: 6rem 1rem;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.btn-primary, .btn-secondary {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 700;
+    transition: background 0.3s;
+}
+
+.btn-primary {
+    background: var(--primary-color);
+    color: white;
+}
+
+.btn-primary:hover {
+    background: #004a99;
+}
+
+.btn-secondary {
+    background: white;
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+}
+
+.btn-secondary:hover {
+    background: var(--primary-color);
+    color: white;
+}
+
+.info-section {
+    background: white;
+    padding: 4rem 1rem;
+    text-align: center;
+}
+
+.info-section.alt {
+    background: #eef1f7;
+}
+
+.niche-list, .service-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.niche-list li, .service-list li {
+    background: var(--primary-color);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+}
+
+.testimonials {
+    background: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 4rem 1rem;
+}
+
+.testimonial-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.about {
+    background: white;
+    text-align: center;
+    padding: 4rem 1rem;
+}
+
+.team img {
+    border-radius: 50%;
+    margin: 0.5rem;
+}
+
+.footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 3rem 1rem;
+}
+
+.social-icons a {
+    margin: 0 0.5rem;
+    display: inline-block;
+    font-size: 1.5rem;
+    color: white;
+    text-decoration: none;
+}
+
+@media (min-width: 768px) {
+    .hero {
+        padding: 8rem 1rem;
+    }
+
+    .hero h1 {
+        font-size: 3rem;
+    }
+
+    .testimonial-grid {
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+
